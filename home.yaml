@@ -12,6 +12,8 @@ proxies:
   type: hysteria2
   password: 7ffc7265-a655-4bca-b06c-cb17c6bfdfcb
   auth: 7ffc7265-a655-4bca-b06c-cb17c6bfdfcb
+  up: 70 Mbps
+  down: 2000 Mbps
   sni: bing.com
   skip-cert-verify: true
   udp: true
@@ -21,6 +23,8 @@ proxies:
   type: hysteria2
   password: 7ffc7265-a655-4bca-b06c-cb17c6bfdfcb
   auth: 7ffc7265-a655-4bca-b06c-cb17c6bfdfcb
+  up: 70 Mbps
+  down: 2000 Mbps
   sni: bing.com
   skip-cert-verify: true
   udp: true
@@ -30,6 +34,8 @@ proxies:
   type: hysteria2
   password: 7ffc7265-a655-4bca-b06c-cb17c6bfdfcb
   auth: 7ffc7265-a655-4bca-b06c-cb17c6bfdfcb
+  up: 70 Mbps
+  down: 2000 Mbps
   sni: bing.com
   skip-cert-verify: true
   udp: true
@@ -39,6 +45,8 @@ proxies:
   type: hysteria2
   password: 7ffc7265-a655-4bca-b06c-cb17c6bfdfcb
   auth: 7ffc7265-a655-4bca-b06c-cb17c6bfdfcb
+  up: 70 Mbps
+  down: 2000 Mbps
   sni: bing.com
   skip-cert-verify: true
   udp: true
@@ -48,6 +56,8 @@ proxies:
   type: hysteria2
   password: 3d5f9543-475d-41f9-a516-8f7ede1031d5
   auth: 3d5f9543-475d-41f9-a516-8f7ede1031d5
+  up: 70 Mbps
+  down: 2000 Mbps
   sni: bing.com
   skip-cert-verify: true
   udp: true
@@ -57,6 +67,8 @@ proxies:
   type: hysteria2
   password: 3d5f9543-475d-41f9-a516-8f7ede1031d5
   auth: 3d5f9543-475d-41f9-a516-8f7ede1031d5
+  up: 70 Mbps
+  down: 2000 Mbps
   sni: bing.com
   skip-cert-verify: true
   udp: true
@@ -66,6 +78,8 @@ proxies:
   type: hysteria2
   password: 3d5f9543-475d-41f9-a516-8f7ede1031d5
   auth: 3d5f9543-475d-41f9-a516-8f7ede1031d5
+  up: 70 Mbps
+  down: 2000 Mbps
   sni: bing.com
   skip-cert-verify: true
   udp: true
@@ -75,6 +89,8 @@ proxies:
   type: hysteria2
   password: 3d5f9543-475d-41f9-a516-8f7ede1031d5
   auth: 3d5f9543-475d-41f9-a516-8f7ede1031d5
+  up: 70 Mbps
+  down: 2000 Mbps
   sni: bing.com
   skip-cert-verify: true
   udp: true
@@ -84,6 +100,8 @@ proxies:
   type: hysteria2
   password: b805146c-6795-4870-a2d4-57846ecf768a
   auth: b805146c-6795-4870-a2d4-57846ecf768a
+  up: 70 Mbps
+  down: 2000 Mbps
   sni: bing.com
   skip-cert-verify: true
   udp: true
@@ -93,6 +111,8 @@ proxies:
   type: hysteria2
   password: b805146c-6795-4870-a2d4-57846ecf768a
   auth: b805146c-6795-4870-a2d4-57846ecf768a
+  up: 70 Mbps
+  down: 2000 Mbps
   sni: bing.com
   skip-cert-verify: true
   udp: true
@@ -102,6 +122,8 @@ proxies:
   type: hysteria2
   password: b805146c-6795-4870-a2d4-57846ecf768a
   auth: b805146c-6795-4870-a2d4-57846ecf768a
+  up: 70 Mbps
+  down: 2000 Mbps
   sni: bing.com
   skip-cert-verify: true
   udp: true
@@ -111,6 +133,8 @@ proxies:
   type: hysteria2
   password: b805146c-6795-4870-a2d4-57846ecf768a
   auth: b805146c-6795-4870-a2d4-57846ecf768a
+  up: 70 Mbps
+  down: 2000 Mbps
   sni: bing.com
   skip-cert-verify: true
   udp: true
@@ -173,7 +197,7 @@ proxy-groups:
   - "\U0001F1FA\U0001F1F8 芝加哥D"
 - name: "⭐ CDN均衡"
   type: load-balance
-  strategy: consistent-hashing
+  strategy: round-robin
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -184,7 +208,7 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 CDN韩国D"
 - name: "⭐ 韩国均衡"
   type: load-balance
-  strategy: consistent-hashing
+  strategy: round-robin
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -195,7 +219,7 @@ proxy-groups:
   - "\U0001F1F0\U0001F1F7 韩国直连D"
 - name: "⭐ 美国均衡"
   type: load-balance
-  strategy: consistent-hashing
+  strategy: round-robin
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
