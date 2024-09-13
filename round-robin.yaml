@@ -139,6 +139,11 @@ proxies:
   skip-cert-verify: true
   udp: true
 proxy-groups:
+- name: "⭐ 链式代理"
+  type: dialer-proxy
+  proxies:
+  - "\U0001F1F0\U0001F1F7 韩国直连A"
+  - "\U0001F1FA\U0001F1F8 芝加哥A"
 - name: "\U0001F680 节点选择"
   type: select
   proxies:
@@ -325,6 +330,7 @@ proxy-groups:
   - "⭐ CDN均衡"
   - "⭐ 韩国均衡"
   - "⭐ 美国均衡"
+  - "⭐ 链式代理"
   - "\U0001F6E9️ 手动切换"
   - DIRECT
 - name: "\U0001F4F2 Telegram"
