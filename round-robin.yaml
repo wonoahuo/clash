@@ -6,6 +6,18 @@ mode: rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
+- name: "\U0001F1F0\U0001F1F7 韩国链式A"
+  server: kro.wonaohuo.uk
+  port: 22445
+  type: hysteria2
+  password: 7ffc7265-a655-4bca-b06c-cb17c6bfdfcb
+  auth: 7ffc7265-a655-4bca-b06c-cb17c6bfdfcb
+  up: 70 Mbps
+  down: 2000 Mbps
+  sni: bing.com
+  skip-cert-verify: true
+  udp: true
+  dialer-proxy: "\U0001F1FA\U0001F1F8 芝加哥A"
 - name: "\U0001F1F0\U0001F1F7 韩国直连A"
   server: kro.wonaohuo.uk
   port: 22445
@@ -159,6 +171,7 @@ proxy-groups:
 - name: "\U0001F6E9️ 手动切换"
   type: select
   proxies:
+  - "\U0001F1F0\U0001F1F7 韩国链式A"
   - "\U0001F1F0\U0001F1F7 韩国直连A"
   - "\U0001F1F0\U0001F1F7 韩国直连B"
   - "\U0001F1F0\U0001F1F7 韩国直连C"
