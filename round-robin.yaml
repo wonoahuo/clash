@@ -17,6 +17,7 @@ proxies:
   sni: bing.com
   skip-cert-verify: true
   udp: true
+  dialer-proxy: dialer
 - name: "\U0001F1F0\U0001F1F7 韩国直连B"
   server: kro.wonaohuo.uk
   port: 22446
@@ -139,6 +140,10 @@ proxies:
   skip-cert-verify: true
   udp: true
 proxy-groups:
+- name: dialer
+  type: select
+  proxies:
+  - "\U0001F1FA\U0001F1F8 芝加哥A"
 - name: "\U0001F680 节点选择"
   type: select
   proxies:
